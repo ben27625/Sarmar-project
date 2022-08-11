@@ -28,8 +28,14 @@ html,body {
     /* margin: 20px; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
+/* 
+.header .container .logo { 
+    width: 50%;
+    margin: auto;
+    padding: 50px;} */
 
 .header .container .logo a {
     text-decoration: none;
@@ -37,14 +43,25 @@ html,body {
 
 
 
+
+
 header .container .logo a img {
     /* width: px; */
+}
+
+
+
+.header .container .nav {
+    display: flex;
+    align-items: center;
 }
 
 header .container .nav a {
     padding: 55px 15px;
     /* line-height: 1.6rem; */
     /* font-size: 1.6rem; */
+    color: black;
+    font-weight: 500;
     
 }
 
@@ -59,10 +76,28 @@ header .container .nav i {
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+   
     /* padding: 25px; */
     /* padding: 55px 15px; */
 }
+
+
+
+.header .container .nav a span {
+    display: inline-block;
+    transition: all 1s;
+  }
+
+
+.header .container .nav a:hover {
+    color: #f55f8d;
+  }
+
+
+.header .container .nav a:hover span {
+    animation: upToDown 0.3s;
+  }
+
 
 header .container .nav button {
     padding: 20px 35px;
@@ -75,6 +110,16 @@ header .container .nav button {
     color: #ffffff;
     
 }
+
+header .container .nav button:hover {
+    background-position: right center;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Carousel */
 
 .carousel {
     padding-top: 180px;
@@ -760,3 +805,33 @@ header .container .nav button {
   }
   
 
+/* Out Blog */
+.out-blog {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes upToDown {
+    49% {
+        transform: translateY(100%);
+      }
+      50% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      51% {
+        opacity: 1;
+      }
+}
